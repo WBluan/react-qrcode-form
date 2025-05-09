@@ -3,9 +3,16 @@ $background-color: #282a36;
 $input-border: #50fa7b;
 $highlight: #a85af7;
 $foreground-color: #f8f8f2;
+$font-family: 'Poppins', sans-serif;
 
 body {
   margin: 0;
   background-color: $background-color;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: $font-family;
+}
+
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+  margin: 0;
 }

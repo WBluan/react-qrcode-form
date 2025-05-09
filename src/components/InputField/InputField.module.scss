@@ -3,23 +3,25 @@
 .inputGroup {
     display: flex;
     flex-direction: column;
-  
+    font-family: 'Poppins', sans-serif;
     label {
       color: $foreground-color;
       margin-bottom: 0.3rem;
       margin-top: 0.5rem;
-      font-size: 0.95rem;
+      font-size: 1.5rem;
+      font-family: 'Poppins', sans-serif;
     }
   
     input {
-      padding: 0.6rem;
+      padding: 1rem;
       gap: 0.5rem;
       border-radius: 20px;
       border: 2px solid $input-border;
       background-color: #44475a;
       color: #f8f8f2;
       outline: none;
-  
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
       &:focus {
         border-color: $highlight;
       }

@@ -4,7 +4,6 @@ import { FormContext } from '../../context/FormContext';
 
 const InputField = ({ label, name, type = 'text'}) => {
     const { formData, updateField} = useContext(FormContext);
-
     return (
         <div className={styles.inputGroup}>
             <label>{label}</label>
