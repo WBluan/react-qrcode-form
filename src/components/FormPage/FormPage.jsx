@@ -29,7 +29,7 @@ const FormPage = () => {
     return (
       <div className={styles.container}>
         <div className={styles.formWrapper}>
-          <h1>QR Code Com. Corp. </h1>
+          <h1>QR Code Comunicação Corporativa </h1>
           <FormSection />
           <button onClick={handleSubmit} disabled={loading}>
             {loading ? 'Gerando...' : 'Gerar QR Code'}
@@ -37,7 +37,7 @@ const FormPage = () => {
             {error && <p className={styles.error}>{error}</p>}
         </div>
         <div className={styles.qrCodeBox}>
-            {!qrCodeUrl && <p>QR Code Gerado</p>}
+            {!qrCodeUrl && <p>QR Code</p>}
              {qrCodeUrl && (
              <img 
                  src={qrCodeUrl}

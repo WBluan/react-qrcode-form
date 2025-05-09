@@ -3,7 +3,7 @@
 .inputGroup {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-family;
 
   // Label principal (título do campo)
   > label {
@@ -11,7 +11,7 @@
     margin-bottom: 0.3rem;
     margin-top: 0.5rem;
     font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family;
   }
 
   input {
@@ -23,7 +23,7 @@
     color: #f8f8f2;
     outline: none;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family;
 
     &:focus {
       border-color: $highlight;
@@ -31,22 +31,24 @@
   }
 
   .checkBox {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     margin-top: 0.4rem;
+    margin-left: 0.3rem;
     gap: 0.4rem;
   
     input[type="checkbox"] {
+      all: unset;
       appearance: none;
-      width: 1px;
-      gap: 0.5rem;
-      height: 1px;
-      border-radius: 50%; // bolinha
-      border: 2px solid $highlight;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%; 
+      border: 2px solid $input-border;
       background-color: transparent;
       cursor: pointer;
       position: relative;
+      box-sizing: border-box; 
       transition: all 0.2s ease;
   
       &:checked::after {
@@ -56,7 +58,7 @@
         left: 0px;
         width: 100%;
         height: 100%;
-        background-color: $input-border;
+        background-color: $highlight;
         border-radius: 50%;
       }
     }
